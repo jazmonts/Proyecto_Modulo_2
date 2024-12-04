@@ -1,9 +1,9 @@
-**# Proyecto trabajado para el módulo dos 
+# Proyecto trabajado para el módulo dos 
 
-## Instrucciones para ejecutar
+# Instrucciones para ejecutar
 
 Se requiere ejecutar html y css
 
-## Información del autor 
+# Información del autor 
 
 @jazmonts**
