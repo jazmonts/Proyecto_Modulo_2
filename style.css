@@ -116,6 +116,29 @@ nav ul li a {
     font-size: 1.1rem;
     color: #666;
 }
+.flex-container {
+
+    display: flex;
+  
+    align-items: flex-start; /* Alinear los elementos al inicio en el eje cruzado */
+  
+    height: 300px; /* Definir una altura para el contenedor */
+  
+    gap: 10px; /* Espacio entre elementos */
+  
+    background-color: #fb0d3176;
+  
+    padding: 20px;
+  
+  }
+  
+  .special-item {
+    text-align: center;
+  
+    align-self: center; /* Este elemento se alinea al final en el eje cruzado */
+  
+  }
+
 
 .precio {
     font-size: 1.3rem;
