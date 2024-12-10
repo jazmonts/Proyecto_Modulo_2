@@ -5,14 +5,26 @@
     font-family: Arial, sans-serif;
 }
 
+#disponible {
+    color: rgb(66, 163, 79);
+    display: flex;
+    justify-content: flex-start;
+}
+
+#oferta {
+    color: rgb(188, 5, 5);
+}
+
 body {
     background-color: #df84c7;
+    line-height: 1.6;
     color: #333;
 }
 
 header {
-    background-color: #ffb6c1;
+    background-color: #55415589;
     padding: 20px 0;
+    box-shadow: 0 4px 8px hsla(0, 2%, 36%, 0.315);
 }
 
 header .container {
@@ -22,7 +34,7 @@ header .container {
 }
 
 header h1 {
-    color: #fff;
+    color: whitesmoke;
     font-size: 2rem;
 }
 
@@ -38,7 +50,7 @@ header h1 {
   
     text-align: center;
   
-    z-index: 1000; 
+    z-index: 200; 
   
   }
 
@@ -48,17 +60,23 @@ nav ul {
 }
 
 nav ul li {
-    margin-left: 20px;
+    margin-left: 15px;
 }
 
 nav ul li a {
-    text-decoration: none;
     color: #fff;
-    font-size: 1.1rem;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+}
+nav ul li a:hover {
+    color: #333;
 }
 
 .hero {
-    background-image: url('ternurines-hero.jpg'); /* Puedes reemplazar esta imagen */
+    background-image: url('ternurines-hero.jpg'); 
     background-size: cover;
     background-position: center;
     padding: 60px 20px;
@@ -91,7 +109,7 @@ nav ul li a {
     flex-wrap: wrap;
 }
 
-.producto {
+.producto{
     background-color: #f9f9f9;
     border: 1px solid #ddd;
     border-radius: 8px;
@@ -100,6 +118,12 @@ nav ul li a {
     width: 250px;
     margin-bottom: 30px;
 }
+
+.producto:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transform: translateY(-5px);
+}
+
 
 .producto img {
     width: 100%;
@@ -112,37 +136,41 @@ nav ul li a {
     margin: 10px 0;
 }
 
-.producto p {
-    font-size: 1.1rem;
-    color: #666;
+.costo {
+    font-size: 1.3rem;
+    color: #112292;
+    margin: 10px 0;
+    font-weight: bold;
 }
+
 .flex-container {
 
     display: flex;
-  
-    align-items: flex-start; /* Alinear los elementos al inicio en el eje cruzado */
-  
-    height: 300px; /* Definir una altura para el contenedor */
-  
-    gap: 10px; /* Espacio entre elementos */
-  
+    align-items: flex-startd; 
+    height: 450px; 
+    justify-content: space-around;
+    gap: 100px;
     background-color: #fb0d3176;
-    padding: 20px;
-  
+    padding: 20px; 
+
   }
   
-  .special-item {
+.special-item {
     text-align: center;
-  
-    align-self: center; /* Este elemento se alinea al final en el eje cruzado */
-  
+    align-self: center; 
   }
+
+  .special-item:hover {
+    box-shadow: 0px 10px 8px rgba(0, 0, 0, 0.1);
+    transform: translateY(-10px);
+}
 
 
 .precio {
-    font-size: 1.3rem;
-    color: #e74c3c;
+    font-size: 1.7rem;
+    color: #d11500;
     margin: 10px 0;
+    font-weight: bold;
 }
 
 .btn {
@@ -156,6 +184,7 @@ nav ul li a {
 
 .btn:hover {
     background-color: #f88a9c;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .carrito {
@@ -202,13 +231,46 @@ nav ul li a {
 }
 
 
-footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 20px 0;
+
+.cookie-footer {
+
+  position: fixed; 
+
+  bottom: 0; 
+
+  left: 0;
+
+  right: 0;
+
+  background-color: #222; 
+
+  color: #fff;
+
+  padding: 1em;
+
+  display: flex; 
+
+  justify-content: space-between; 
+
+  align-items: center;
+
 }
 
-footer p {
-    font-size: 1rem;
+.cookie-footer button {
+
+  background-color: #4caf50; 
+  color: white;
+
+  border: none;
+
+  padding: 0.5em 1em;
+
+  cursor: pointer;
+
+}
+
+.cookie-footer button:hover {
+
+  background-color: #45a049; 
+
 }
