@@ -145,18 +145,21 @@ nav ul li a:hover {
 .flex-container {
 
     display: flex;
-    align-items: flex-startd; 
-    height: 450px; 
-    justify-content: space-around;
-    gap: 100px;
+    align-items: center; 
+    height: 490px; 
+    justify-content: center;
+    gap: 200px;
     background-color: #fb0d3176;
-    padding: 20px; 
-
+    border-radius: 8px;
+    padding: 20x;
+    text-align: center;
+    width: 295px;
+    margin-bottom: 30px;
 }
   
 .special-item {
     text-align: center;
-    align-self: center; 
+    align-self: center;  
 }
 
 .special-item:hover {
